@@ -1,0 +1,25 @@
+body {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, auto);
+    grid-template: "nav"
+                   "main-image" 
+                   "main"
+                   "footer";
+}
+
+.nav {
+    grid-area:nav;
+}
+
+.main-image {
+    grid-area: main-image;
+}
+
+.main {
+    grid-area:main;
+}
+
+.footer {
+    grid-area: footer;
+}

@@ -1,0 +1,13 @@
+@import 'normalize';
+@import 'layout';
+@import 'variables';
+@import 'mediaqueries';
+@import 'nav';
+@import 'main-image';
+@import 'main';
+@import 'footer';
+
+* {
+    font-family: $primary-font;
+}
+

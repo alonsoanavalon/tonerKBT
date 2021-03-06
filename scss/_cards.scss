@@ -1,0 +1,43 @@
+/* Cards */
+
+.cards {
+    margin: 4rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap:20px;
+    .card {
+        width: 300px;
+        border:2px solid #ccc;
+        border-radius: .5rem;
+        overflow-x: hidden;
+        height:400px;
+
+        .color {
+            height:100px;
+
+        }
+        
+    }
+
+    .card-1 {
+        .color {
+            background-color: $purple;
+        }
+    }
+
+    .card-2 {
+        .color {
+            background-color: $blue;
+        }
+    }
+
+    .card-3 {
+        .color {
+            background-color: $green;
+        }
+    }
+
+}

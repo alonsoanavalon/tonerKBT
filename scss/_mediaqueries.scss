@@ -1,0 +1,80 @@
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+
+    /* Main image */
+    body {
+        .main-image {
+            height:400px;
+        }
+    }
+    /* catalogo */
+
+    .main {
+
+        .catalogue {
+            width:90%;
+            margin:0 auto;
+
+            .catalogue-section {
+   
+                .item {
+                    width:320px;
+                }
+            }
+        } 
+
+    }
+
+  
+
+
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+
+    /* Main iamge */
+
+    body {
+        .main-image {
+            height:500px;
+        }
+    }
+
+
+    /* Imagen catalogo */
+    .main {
+
+        .image-catalogue {
+            height:200px;
+        }
+    }
+
+    /* catalogo */
+
+        
+
+    
+
+ }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+
+    /* Main image */
+
+
+
+    /* cards */
+    .main {
+        .cards {
+            .card {
+                width:400px;
+                margin:0 1rem;
+            }
+        }
+    }
+
+
+    
+ }

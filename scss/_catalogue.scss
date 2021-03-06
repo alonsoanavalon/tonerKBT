@@ -1,0 +1,107 @@
+/* Catálogo imagen */
+.slider-title {
+    text-align: center;
+}
+
+.image-catalogue {
+    background-image: url("/assets/1.jpg");
+    height:150px;
+    background-position: center;
+    background-clip: border-box;
+    background-size: cover;
+
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+        padding:.5rem 1.5rem;
+        background-color: #fff;
+        color:#333;
+        border-radius: .5rem;
+        font-size: $subtitle;
+        filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.25));
+
+    }
+
+
+}
+
+
+/* Catalogo */
+
+.catalogue {
+    width:100%;
+    margin:0 auto;
+    .catalogue-titles {
+        text-align: center;
+        font-size: $subtitle;
+    }
+    .item {
+
+        width:165px;
+        text-align: center;
+        img {
+            width:130px;
+        }
+
+
+        box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .catalogue-section {
+        margin:4rem 0;
+        display: flex;
+        flex-wrap: wrap;
+
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        gap:20px;
+        
+        .container-more {
+            width:100%;
+            text-align: center;
+            margin: 3rem 0;
+        }
+        
+        .more {
+            padding:1rem 2rem;
+            border-radius: .8rem;
+            text-align: center;
+            text-decoration: none;
+            color:#fff;
+            font-weight: 500;
+            background-color: $purple;
+            
+        }
+
+        .item-buttons {
+
+            display: flex;
+            align-content: center;
+            align-items: stretch;
+            justify-content: center;
+            background-color: $green;
+            p, a {
+                display: block;
+                width:50%;
+                font-weight: 500;
+
+
+            }
+            a {
+                background-color: $blue;
+                text-decoration: none;
+                color:#fff;
+                display: flex;
+                align-items: center;
+                align-content: center;
+                justify-content: center;
+            }
+        }
+        
+    }
+}
