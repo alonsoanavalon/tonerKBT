@@ -10,15 +10,49 @@
     gap:20px;
     .card {
         width: 300px;
-        border:2px solid #ccc;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: .5rem;
-        overflow-x: hidden;
-        height:400px;
+
+        height:450px;
 
         .color {
-            height:100px;
+            height:70px;
+            padding:1rem;
+            border-radius: .5rem .5rem 0 0;
+
+            .card-number {
+                border-top:2px solid #fff;
+                margin-top:1rem;
+                font-weight: 900;
+                font-size: $title;
+                color:#fff;
+                line-height: 2rem;
+
+                display: inline-block;
+            }
+
+            .card-description {
+                font-weight: 500;
+                color:#fff;
+            }
+
+     
 
         }
+
+        .card-title {
+            padding:1rem;
+        }
+
+        .card-info {
+            padding: 0 1rem;
+            font-size: $regular;
+            line-height:$lineheight;
+            span {
+                font-weight: 900;
+            }
+        }
+        
         
     }
 

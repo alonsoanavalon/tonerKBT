@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     align-items: center;
-    overflow-x: hidden;
+
     padding:0 3rem;
     .nav-logo {
         width:120px;
@@ -24,8 +24,30 @@
 
         img {
             width:40px;
-            padding: .5rem;
+            padding: 1rem;
         }
     }
 
+    .nav-btn {
+        position:absolute;
+        right:2rem;
+        top: 1.7rem;
+        border:none;
+        outline:none;
+        background-color: $blue;
+        cursor: pointer;
+        padding:0;
+        margin:0;
+        width:60px;
+        height:60px;
+        font-size:1.2rem;
+        color:#fff;
+        border-radius:  50%          ;
+        -webkit-border-radius:  50%          ;
+        -moz-border-radius:  50%          ;
+        -ms-border-radius:  50%          ;
+        -o-border-radius:  50%          ;
+    }
+
 }
+

@@ -9,6 +9,11 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <!-- Slider -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
     <!-- Styles -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -18,13 +23,13 @@
     <nav class="nav">
         
         <img class="nav-logo" src="/assets/logo.png" alt="">
-
+        <button class="nav-btn hidden" id="btn-menu"><i class="fas fa-bars"></i></button>
         <div class="nav-menu">
-            <a href="#">Nosotros</a>
-            <a href="#">Productos</a>
-            <a href="#">Contacto</a>
-            <img src="/assets/whatsapp.svg" alt="logo-whatsapp">
-            <img src="/assets/instagram.svg" alt="logo-instagram">
+            <a class="nav-menu__item" href="#">Servicios</a>
+            <a class="nav-menu__item" href="#">Productos</a>
+            <a class="nav-menu__item" href="#">Contacto</a>
+            <img id="nav-whatsapp" class="nav-menu__img"src="/assets/whatsapp.svg" alt="logo-whatsapp">
+            <img id="nav-instagram" class="nav-menu__img"src="/assets/instagram.svg" alt="logo-instagram">
         </div>
 
     </nav>
@@ -64,7 +69,8 @@
                     Selecciona tus productos
                 </h3>
                 <div class="card-info">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat blanditiis ad aliquam. Sunt eligendi itaque dolor officia. Vero, explicabo ipsam.
+                    Contamos con diversos productos, la calidad y precio es algo que nos caracteriza.
+                    <span>TONERKBT</span> posee productos para clientes exigentes y también para quienes buscan precios bajos.
                 </div>
 
             </div>
@@ -82,7 +88,7 @@
                     Recibe los productos en la comodidad de tu hogar
                 </h3>
                 <div class="card-info">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat blanditiis ad aliquam. Sunt eligendi itaque dolor officia. Vero, explicabo ipsam.
+                    No necesitas moverte de tu casa, nosotros nos preocupamos de que los productos que compres lleguen a tu puerta.
                 </div>
 
             </div>
@@ -100,7 +106,10 @@
                     Garantizamos la calidad de nuestros productos
                 </h3>
                 <div class="card-info">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat blanditiis ad aliquam. Sunt eligendi itaque dolor officia. Vero, explicabo ipsam.
+                    Nos aseguramos que la calidad de nuestros proveedores y sus productos esté a la altura de nuestros clientes, es por eso que garantizamos su satisfacción.
+
+                    
+                    
                 </div>
 
             </div>
@@ -119,6 +128,16 @@
                 <img src="/assets/Catridge TONERKBT.png" alt="" class="slide">
             </div>
         </section>
+
+        <div class="splide">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">Slide 01</li>
+                    <li class="splide__slide">Slide 02</li>
+                    <li class="splide__slide">Slide 03</li>
+                </ul>
+            </div>
+        </div>
 
 
         <!-- Imagen Catálogo -->
@@ -142,14 +161,14 @@
 
                 <div class="catalogue-section">
                     <div class="item">
-                        <img src="assets/Catridge TONERKBT.png" alt="">
+                        <img src="https://res.cloudinary.com/keyzen/image/upload/v1614997657/tonerKBT/unnamed_1_gsycir.png" alt="">
                         <p class="item-description">
-                            Lorem ipsum dolor sit amet.
+                            HP W1105A | HP 105A | Toner Original
                         </p>
                         <div class="item-buttons">
                             
                             <p class="price">
-                                $10.000 + iva
+                                $79.990 + iva
                             </p>
                             <a href="#" class="get">
                                 Solicitar
@@ -158,14 +177,14 @@
                         </div>
                     </div>
                     <div class="item">
-                        <img src="assets/Catridge TONERKBT.png" alt="">
+                        <img src="https://res.cloudinary.com/keyzen/image/upload/v1614997658/tonerKBT/240_1_lnzjkh.png" alt="">
                         <p class="item-description">
-                            Lorem ipsum dolor sit amet.
+                            SAMSUNG MLT-D101S | Toner Original
                         </p>
                         <div class="item-buttons">
                             
                             <p class="price">
-                                $10.000 + iva
+                                $55.990 + iva
                             </p>
                             <a href="#" class="get">
                                 Solicitar
@@ -174,14 +193,14 @@
                         </div>
                     </div>
                     <div class="item">
-                        <img src="assets/Catridge TONERKBT.png" alt="">
+                        <img src="https://res.cloudinary.com/keyzen/image/upload/v1614997657/tonerKBT/H664BTO_1_di2kff.png" alt="">
                         <p class="item-description">
-                            Lorem ipsum dolor sit amet.
+                            HP 664 NEGRO | F6V29AL | Toner Original
                         </p>
                         <div class="item-buttons">
                             
                             <p class="price">
-                                $10.000 + iva
+                                $14.990 + iva
                             </p>
                             <a href="#" class="get">
                                 Solicitar
@@ -190,14 +209,15 @@
                         </div>
                     </div>
                     <div class="item">
-                        <img src="assets/Catridge TONERKBT.png" alt="">
+                        <img src="https://res.cloudinary.com/keyzen/image/upload/v1614997657/tonerKBT/240_1_1_rrocfy.png" alt="">
                         <p class="item-description">
-                            Lorem ipsum dolor sit amet.
+                            BROTHER TN-3479 | Toner Original
+
                         </p>
                         <div class="item-buttons">
                             
                             <p class="price">
-                                $10.000 + iva
+                                $108.990 + iva
                             </p>
                             <a href="#" class="get">
                                 Solicitar
@@ -206,14 +226,14 @@
                         </div>
                     </div>
                     <div class="item">
-                        <img src="assets/Catridge TONERKBT.png" alt="">
+                        <img src="https://res.cloudinary.com/keyzen/image/upload/v1614997657/tonerKBT/240_2_1_nbwwv0.png" alt="">
                         <p class="item-description">
-                            Lorem ipsum dolor sit amet.
+                            ENDER 3 CREALITY | IMPRESORA 3D | ALTA PRECISIÓN
                         </p>
                         <div class="item-buttons">
                             
                             <p class="price">
-                                $10.000 + iva
+                                $209.990 + iva
                             </p>
                             <a href="#" class="get">
                                 Solicitar
@@ -222,14 +242,14 @@
                         </div>
                     </div>
                     <div class="item">
-                        <img src="assets/Catridge TONERKBT.png" alt="">
+                        <img src="https://res.cloudinary.com/keyzen/image/upload/v1614997657/tonerKBT/240_3_1_dcj6xw.png" alt="">
                         <p class="item-description">
-                            Lorem ipsum dolor sit amet.
+                            EPSON 504 | PACK COLORES | Toner Original
                         </p>
                         <div class="item-buttons">
                             
                             <p class="price">
-                                $10.000 + iva
+                                $26.990 + iva
                             </p>
                             <a href="#" class="get">
                                 Solicitar
@@ -249,12 +269,12 @@
                     <div class="item">
                         <img src="assets/Catridge TONERKBT.png" alt="">
                         <p class="item-description">
-                            Lorem ipsum dolor sit amet.
+                            SAMSUNG MLT-D101S | Toner Alternativo
                         </p>
                         <div class="item-buttons">
                             
                             <p class="price">
-                                $10.000 + iva
+                                $19.000 + iva
                             </p>
                             <a href="#" class="get">
                                 Solicitar
@@ -265,12 +285,12 @@
                     <div class="item">
                         <img src="assets/Catridge TONERKBT.png" alt="">
                         <p class="item-description">
-                            Lorem ipsum dolor sit amet.
+                            HP CE322A | YELLOW | 128A | Toner Alternativo
                         </p>
                         <div class="item-buttons">
                             
                             <p class="price">
-                                $10.000 + iva
+                                $24.098 + iva
                             </p>
                             <a href="#" class="get">
                                 Solicitar
@@ -281,12 +301,12 @@
                     <div class="item">
                         <img src="assets/Catridge TONERKBT.png" alt="">
                         <p class="item-description">
-                            Lorem ipsum dolor sit amet.
+                            XEROX 106R02773 | Toner Alternativo
                         </p>
                         <div class="item-buttons">
                             
                             <p class="price">
-                                $10.000 + iva
+                                $31.990 + iva
                             </p>
                             <a href="#" class="get">
                                 Solicitar
@@ -297,12 +317,12 @@
                     <div class="item">
                         <img src="assets/Catridge TONERKBT.png" alt="">
                         <p class="item-description">
-                            Lorem ipsum dolor sit amet.
+                            BROTHER TN-750 | Toner Alternativo
                         </p>
                         <div class="item-buttons">
                             
                             <p class="price">
-                                $10.000 + iva
+                                $17.990 + iva
                             </p>
                             <a href="#" class="get">
                                 Solicitar
@@ -313,12 +333,12 @@
                     <div class="item">
                         <img src="assets/Catridge TONERKBT.png" alt="">
                         <p class="item-description">
-                            Lorem ipsum dolor sit amet.
+                            SAMSUNG MLT-D105L | Toner Alternativo
                         </p>
                         <div class="item-buttons">
                             
                             <p class="price">
-                                $10.000 + iva
+                                $29.149 + iva
                             </p>
                             <a href="#" class="get">
                                 Solicitar
@@ -329,12 +349,60 @@
                     <div class="item">
                         <img src="assets/Catridge TONERKBT.png" alt="">
                         <p class="item-description">
-                            Lorem ipsum dolor sit amet.
+                            BROTHER TN-850 | Toner Alternativo
                         </p>
                         <div class="item-buttons">
                             
                             <p class="price">
-                                $10.000 + iva
+                                $21.990 + iva
+                            </p>
+                            <a href="#" class="get">
+                                Solicitar
+                            </a>
+    
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="assets/Catridge TONERKBT.png" alt="">
+                        <p class="item-description">
+                            BROTHER TN-660 | Toner Alternativo
+                        </p>
+                        <div class="item-buttons">
+                            
+                            <p class="price">
+                                $13.990 + iva
+                            </p>
+                            <a href="#" class="get">
+                                Solicitar
+                            </a>
+    
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="assets/Catridge TONERKBT.png" alt="">
+                        <p class="item-description">
+                            BROTHER TN-3479 | Toner Alternativo
+                        </p>
+                        <div class="item-buttons">
+                            
+                            <p class="price">
+                                $24.990 + iva
+                            </p>
+                            <a href="#" class="get">
+                                Solicitar
+                            </a>
+    
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="assets/Catridge TONERKBT.png" alt="">
+                        <p class="item-description">
+                            BROTHER TN-850 | Toner Alternativo
+                        </p>
+                        <div class="item-buttons">
+                            
+                            <p class="price">
+                                Repetido
                             </p>
                             <a href="#" class="get">
                                 Solicitar
@@ -358,14 +426,14 @@
                     
             
                     <div class="item">
-                        <img src="assets/Catridge TONERKBT.png" alt="">
+                        <img src="https://res.cloudinary.com/keyzen/image/upload/v1614997658/tonerKBT/240_13_1_rg3rti.png" alt="">
                         <p class="item-description">
-                            Lorem ipsum dolor sit amet.
+                            RESMA CARTA | 500 HOJAS | MARCA Zoom
                         </p>
                         <div class="item-buttons">
                             
                             <p class="price">
-                                $10.000 + iva
+                                $3.790 + iva
                             </p>
                             <a href="#" class="get">
                                 Solicitar
@@ -374,14 +442,14 @@
                         </div>
                     </div>
                     <div class="item">
-                        <img src="assets/Catridge TONERKBT.png" alt="">
+                        <img src="https://res.cloudinary.com/keyzen/image/upload/v1614997657/tonerKBT/240_14_1_j6zuyg.png" alt="">
                         <p class="item-description">
-                            Lorem ipsum dolor sit amet.
+                            RESMA CARTA | 500 HOJAS | MARCA Chamex
                         </p>
                         <div class="item-buttons">
                             
                             <p class="price">
-                                $10.000 + iva
+                                $3.790 + iva
                             </p>
                             <a href="#" class="get">
                                 Solicitar
@@ -390,14 +458,14 @@
                         </div>
                     </div>
                     <div class="item">
-                        <img src="assets/Catridge TONERKBT.png" alt="">
+                        <img src="https://res.cloudinary.com/keyzen/image/upload/v1614997658/tonerKBT/240_15_1_p9oteh.png" alt="">
                         <p class="item-description">
-                            Lorem ipsum dolor sit amet.
+                            RESMA OFICIO | 500 HOJAS | MARCA Chamex
                         </p>
                         <div class="item-buttons">
                             
                             <p class="price">
-                                $10.000 + iva
+                                $5.490 + iva
                             </p>
                             <a href="#" class="get">
                                 Solicitar
@@ -406,14 +474,14 @@
                         </div>
                     </div>
                     <div class="item">
-                        <img src="assets/Catridge TONERKBT.png" alt="">
+                        <img src="https://res.cloudinary.com/keyzen/image/upload/v1614997658/tonerKBT/240_16_1_cpgcmj.png" alt="">
                         <p class="item-description">
-                            Lorem ipsum dolor sit amet.
+                            RESMA CARTA 500 HOJAS PAPEL RECICLADO | RESMAS ECOLÓGICAS CHAMEX
                         </p>
                         <div class="item-buttons">
                             
                             <p class="price">
-                                $10.000 + iva
+                                $4.990 + iva
                             </p>
                             <a href="#" class="get">
                                 Solicitar
@@ -461,13 +529,13 @@
                 <h3 class="explore-title">
                     Navega
                 </h3>
-                <a href="#acerca">
-                    Nosotros
+                <a class="explore-item "href="#acerca">
+                    Servicios
                 </a>
-                <a href="#proyectos">
+                <a  class="explore-item href="#proyectos">
                     Productos
                 </a>
-                <a href="#contacto">
+                <a  class="explore-item href="#contacto">
                     Contacto
                 </a>
             </div>
@@ -489,7 +557,8 @@
 
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
 
-    
+    <script src="/js/main.js" type="module"></script>
 </body>
 </html>

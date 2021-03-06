@@ -1,5 +1,72 @@
+@media (max-width:700px) {
+
+   .nav {
+
+        .nav-menu {
+            background-color: rgba($color: #000000, $alpha: 
+            .9);
+            display:flex;
+            flex-direction: column;
+            align-items: #F9B200;
+            height:100%;
+            align-content: center;
+            justify-content: center;
+            text-align: center;
+    
+            position:fixed;
+            z-index:998;
+            width:100%; 
+         
+            opacity: 1;
+            top:0;
+            bottom:0;
+            right: 0;
+            left: 0;
+
+            transform: translateX(100%);
+            -webkit-transform: translateX(100%);
+            -moz-transform: translateX(100%);
+            -ms-transform: translateX(100%);
+            -o-transform: translateX(100%);
+    
+            .nav-menu__item {
+        
+                margin:2rem 0;
+                padding:0;
+                font-size: 1.5rem;
+                color:#fff;
+            }
+
+
+    
+
+        }
+    
+        .nav-menu.active {
+            transition:transform .5s ease;
+            transform: translateX(0%);
+            -webkit-transform: translateX(0%);
+            -moz-transform: translateX(0%);
+            -ms-transform: translateX(0%);
+            -o-transform: translateX(0%);
+        }
+    }
+
+    /* contact */
+
+    #textarea {
+        max-width:300px;
+    }
+    
+
+   
+}
+
+
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) { 
+
+    
 
     /* Main image */
     body {
@@ -33,6 +100,8 @@
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) { 
 
+   
+
     /* Main iamge */
 
     body {
@@ -46,11 +115,113 @@
     .main {
 
         .image-catalogue {
-            height:200px;
+            height:250px;
+            .catalogue-title {
+                font-size: $desktop-title;
+                padding:1rem 2rem;
+            }
         }
     }
 
     /* catalogo */
+
+
+    .main {
+        .catalogue {
+                .catalogue-titles {
+                    font-size: $desktop-title;
+                }
+                .catalogue-section {
+                    .item-description {
+                        font-size: $desktop-regular;
+                    }
+                }
+        }
+    }
+
+    /* Slider */
+
+    .container-slider {
+        padding:7rem 0;
+        .slider-title {
+            font-size: $desktop-title;
+  
+        }
+    }
+
+    /* Main Image */
+    .main-image {
+        .image-titles {
+            .image-title {
+                font-size: $desktop-title;
+            }
+            .image-subtitle {
+                font-size: $desktop-subtitle;
+            }
+        }
+    }
+
+    /* nav */
+
+    .nav {
+        .nav-menu {
+            a {
+                font-size: $desktop-regular;
+            }
+        }
+    }
+
+    .main {
+        .cards {
+            .card {
+                .color {
+                    height:100px;
+                    .card-number {
+                        font-size: $desktop-title;
+                        padding:.5rem 0;
+                    }
+                    .card-description {
+                        font-size: $desktop-regular;
+                    }
+                }
+                .card-title {
+                    font-size: $desktop-regular;
+                }
+                .card-info {
+                    font-size: $desktop-regular;
+                }
+            }
+        }
+    }
+
+    .footer {
+        .footer-container {
+            .explore {
+                .explore-title {
+                    font-size: $desktop-title
+                     
+                }
+
+                .explore-item  {
+                    font-weight: 500 ;
+                    font-size: $desktop-regular;
+                }
+
+            }
+            .follow {
+
+                .follow-title {
+                    font-size: $desktop-title;
+                  
+                }
+
+            }
+        }
+
+        .copyright {
+            font-size: $desktop-regular;
+        }
+    }
 
         
 
@@ -75,6 +246,11 @@
         }
     }
 
+    .main {
+        .catalogue {
+            width:70%;
+            margin: 0 auto;
+        }
+    }
 
-    
  }
