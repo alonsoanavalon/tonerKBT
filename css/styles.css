@@ -326,6 +326,7 @@ body {
 /* Fuentes para phone */
 /* Fuentes para desktop */
 /* Line height */
+/* Solicitar button */
 @media (max-width: 700px) {
   .nav .nav-menu {
     background-color: rgba(0, 0, 0, 0.9);
@@ -546,10 +547,56 @@ body {
     background-color: #11B46A; }
 
 .slider {
-  text-align: center; }
-  .slider img {
-    width: 300px; }
+  width: 350px;
+  margin: 3rem auto;
+  height: 200px;
+  overflow: hidden;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25); }
 
+.slider ul li {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.slider ul {
+  padding: 0;
+  display: flex;
+  width: 400%;
+  animation: slider 20s infinite alternate; }
+
+.slider li {
+  width: 100%;
+  list-style: none; }
+
+.slider li img {
+  width: 100%;
+  object-fit: cover; }
+
+@keyframes slider {
+  0% {
+    margin-left: 0; }
+  20% {
+    margin-left: 0; }
+  25% {
+    margin-left: -100%; }
+  45% {
+    margin-left: -100%; }
+  50% {
+    margin-left: -200%; }
+  70% {
+    margin-left: -200%; }
+  75% {
+    margin-left: -300%; }
+  100% {
+    margin-left: -300%; } }
+@media (min-width: 768px) {
+  .slider {
+    width: 700px;
+    height: 350px; } }
+@media (min-width: 1200px) {
+  .slider {
+    width: 800px;
+    height: 400px; } }
 /* Catálogo imagen */
 .slider-title {
   text-align: center; }
@@ -768,7 +815,8 @@ label {
     width: 50px; }
 
 * {
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth; }
 
 .hidden {
   opacity: 0;
