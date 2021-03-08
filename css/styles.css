@@ -483,7 +483,7 @@ body {
     -o-border-radius: 50%; }
 
 .main-image {
-  background-image: url("/assets/toner-portada.jpg");
+  background-image: url("https://res.cloudinary.com/keyzen/image/upload/v1615233084/tonerKBT/toner-portada_nzgy3n.jpg");
   height: 300px;
   background-position: center;
   background-clip: border-box;
