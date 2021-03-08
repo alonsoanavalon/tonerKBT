@@ -458,8 +458,9 @@ body {
       color: #333;
       font-weight: 700;
       padding: .5rem; }
-    .nav .nav-menu img {
+    .nav .nav-menu .nav-menu__img {
       width: 40px;
+      margin: 0;
       padding: 1rem; }
   .nav .nav-btn {
     position: absolute;
@@ -602,7 +603,7 @@ body {
   text-align: center; }
 
 .image-catalogue {
-  background-image: url("/assets/1.jpg");
+  background-image: url("https://res.cloudinary.com/keyzen/image/upload/v1615214678/tonerKBT/1_nxfyhc.png");
   height: 150px;
   background-position: center;
   background-clip: border-box;
@@ -690,7 +691,8 @@ body {
         align-content: center;
         justify-content: center; }
     .catalogue .catalogue-section .item-description {
-      font-weight: 500; }
+      font-weight: 500;
+      padding: .5rem; }
 
 /* Contacto */
 .contacto {
@@ -780,6 +782,10 @@ label {
     display: flex;
     flex-direction: column;
     align-items: center; }
+    .footer .footer-container .contact-us p {
+      font-size: 1rem;
+      font-weight: 500;
+      color: #fff; }
     .footer .footer-container .explore h3,
     .footer .footer-container .explore a {
       display: block;

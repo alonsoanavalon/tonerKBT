@@ -4,7 +4,7 @@
 }
 
 .image-catalogue {
-    background-image: url("/assets/1.jpg");
+    background-image: url("https://res.cloudinary.com/keyzen/image/upload/v1615214678/tonerKBT/1_nxfyhc.png");
     height:150px;
     background-position: center;
     background-clip: border-box;
@@ -160,6 +160,7 @@
 
         .item-description {
             font-weight: 500;
+            padding:.5rem;
  
         }
         
